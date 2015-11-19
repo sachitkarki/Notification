@@ -15,6 +15,6 @@ public class MainActivity extends Activity {
     }
 
     public void gitTest1(){
-
+        ViewGroup v = null;
     }
 }
