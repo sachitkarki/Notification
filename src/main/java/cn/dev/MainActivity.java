@@ -26,6 +26,10 @@ public class MainActivity extends Activity {
         builder.setSmallIcon(R.mipmap.ic_launcher);
         builder.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher));
 
-        NotificationManagerCompat.from(this).notify(ID,builder.build());
+        builder.setPriority(NotificationCompat.PRIORITY_MAX);
+
+        builder.setDefaults(NotificationCompat.DEFAULT_ALL);
+//        Notification notification = builder.build();
+        NotificationManagerCompat.from(this).notify(ID, builder.build());
     }
 }
